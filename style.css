@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.btn{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 20px;
+    min-width: 40px;
+    transition: opacity 0.2s ease-in;
+}
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.btn + .btn{
+    margin-left: 10px;
+}
+
+.btn--suscess{
+    background-color: rgb(119, 179, 30);
+}
+.btn--warn{
+    background-color: rgb(246, 177, 49);
+}
+.btn--error{
+    background-color: rgb(242, 32, 32);
+}
+
+.btn--size--s{
+    padding: 6px 24px
+}
+
+
+.btn--size--l{
+    padding: 20px 40px;
+}
+
+.btn--disabled{
+    
+    opacity: 0.5 !important;
+}
+.btn--disabled:hover{
+    cursor: default;
+}
